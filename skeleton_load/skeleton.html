@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="skeleton-app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Skeleton Load</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="skeleton.css">
+</head>
+<body ng-controller="skeleton-controller" ng-cloak>
+
+  <div class="skeleton-load" ng-show="!isLoaded">
+    <div class="block"></div>
+    <div class="short-paragraph"></div>
+    <div class="long-paragraph"></div>
+  </div>
+
+  <div class="content" ng-show="isLoaded">
+    <div class="image"><a href="https://github.com/deleonn"><img src="skull.jpg" alt="Skull" width="100px"></a></div>
+    <div class="title">
+      <p>Guess what?</p>
+    </div>
+    <div class="paragraph">
+      <p>Using skeleton load it's awesome!</p>
+    </div>
+    <div class="space"></div>
+    <p style="font-size:16px"><a href="index.html">Take me back</a></p>
+  </div>
+
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="skeleton.js"></script>
+</body>
+</html>
